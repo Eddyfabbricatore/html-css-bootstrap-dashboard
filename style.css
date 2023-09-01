@@ -1,3 +1,7 @@
+body{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
 nav ul li{
   list-style: none;
 }
@@ -30,7 +34,7 @@ nav ul li a{
 
 /* header */
 header{
-  /* height: 75px; */
+  height: 75px;
   background-color: #f0f1f4;
 }
 
@@ -42,29 +46,32 @@ header .top-bar .logo img{
 
 
 /* main */
-main .content{
+/* main .content{
   width: 100vw;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 75px);
 }
 
-main .content .left-side{
+main .left-side{
   width: 75px;
-  height: 100%;
 }
 
-main .content .right-side{
-  width: calc(100vw - 70px);
-  height: 100%;
-}
+main .right-side{
+  width: calc(100vw - 75px);
+  background-color: #f8f9fa;
+} */
 /* /main */
 
 
 @media screen and (min-width: 1200px){
-  header .top-bar .logo img{
+  /* header .top-bar .logo img{
     width: 130px;
-  }
+  } */
 
   main .content .left-side{
     width: 150px;
+  }
+
+  main .content .right-side{
+    width: calc(100vw - 150px);
   }
 }

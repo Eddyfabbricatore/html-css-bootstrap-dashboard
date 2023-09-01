@@ -1,0 +1,91 @@
+:root{
+  --bg-side-bar: #051e34;
+  --bg-side-bar-hover: #7d8a94;
+}
+
+body{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.debug{
+  border: 1px solid black;
+  background-color: bisque;
+}
+
+
+/* header */
+header{
+  height: 75px;
+}
+/* /header */
+
+
+/* main */
+.main-wrapper{
+  height: calc(100vh - 75px);
+}
+
+.main-wrapper main{
+  height: 100%;
+  overflow: hidden;
+}
+
+main aside{
+  width: 75px;
+  background-image: url(img/sidebar-bg.png);
+  background-color: var(--bg-side-bar);
+}
+
+aside nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+aside nav ul li a:hover{
+  background-color: var(--bg-side-bar-hover);
+}
+
+aside nav ul li a i{
+  width: 20px;
+  height: 20px;
+}
+
+main .content{
+  width: calc(100vw - 75px);
+  overflow: auto;
+  background-color: #f8f9fa;
+}
+
+table tbody tr td img{
+  width: 30px;
+  height: 30px;
+}
+
+table tbody tr td a,
+table tbody tr td .btn{
+  border: 1px solid;
+}
+
+.row .col .card ul li img{
+  width: 300px;
+}
+/* /main */
+
+
+@media screen and (min-width: 1200px){
+  /* header .top-bar .logo img{
+    width: 130px;
+  } */
+
+  main aside{
+    width: 150px;
+  }
+
+  main .content{
+    width: calc(100vw - 150px);
+  }
+
+  .content .row.w-100{
+    width: 70% !important;
+  }
+}
