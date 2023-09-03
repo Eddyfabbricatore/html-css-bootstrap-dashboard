@@ -1,77 +1,151 @@
+:root{
+  --bg-side-bar: #051e34;
+  --bg-side-bar-hover: #7d8a94;
+}
+
 body{
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
 }
 
-nav ul li{
-  list-style: none;
+img{
+  width: 100%;
 }
 
-nav ul li a{
-  text-decoration: none;
-  /* color: white; */
+i{
+  cursor: pointer !important;
 }
 
 .debug{
   border: 1px solid black;
+  background-color: bisque;
 }
 
-.w-15{
-  width: 15%;
-}
-
-.w-70{
-  width: 70%;
+.ps-25{
+  padding-left: 2.5rem;
 }
 
 .bg-white{
-  background-color: #f7f7f9;
+  background-color: white !important;
 }
 
-.bg-gray{
-  background-color: #e5e5e5;
+.bg-input{
+  background-color: #dedee0;
+}
+
+.color-bell{
+  color: #f68c06 !important;
+}
+
+.color-white{
+  color: white !important;
 }
 
 
 /* header */
 header{
   height: 75px;
-  background-color: #f0f1f4;
+  min-width: 570px;
 }
 
-header .top-bar .logo img{
+header .row .col img:first-of-type{
   width: 30px;
   height: 30px;
+}
+
+header .row .col .form-group{
+  position: relative;
+}
+
+header .row .col .form-group i{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+header .row .col i{
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #7d8a94;
 }
 /* /header */
 
 
 /* main */
-/* main .content{
-  width: 100vw;
+.main-wrapper{
   height: calc(100vh - 75px);
 }
 
-main .left-side{
-  width: 75px;
+.main-wrapper main{
+  height: 100%;
+  overflow: hidden;
 }
 
-main .right-side{
+main aside{
+  width: 75px;
+  background-image: url(img/sidebar-bg.png);
+  background-color: var(--bg-side-bar);
+}
+
+aside nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+aside nav ul li a:hover{
+  background-color: var(--bg-side-bar-hover);
+}
+
+aside nav ul li a i{
+  width: 20px;
+  height: 20px;
+}
+
+main .content{
   width: calc(100vw - 75px);
-  background-color: #f8f9fa;
-} */
+  overflow-y: auto;
+}
+
+.content .boolean-top{
+  height: 120px;
+  background-color: #1b72e8;
+}
+
+.content .boolean-top .row .col span{
+  background-color: rgba(22, 91, 186, .8) !important;
+}
+
+.span-custom{
+  background-color: #f8f9fa !important;
+}
+
+table tbody tr td img{
+  width: 30px;
+  height: 30px;
+}
+
+table tbody tr td .btn{
+  border: 1px solid;
+}
+
+.row .col .card ul li p{
+  font-size: .9rem;
+}
 /* /main */
 
 
 @media screen and (min-width: 1200px){
-  /* header .top-bar .logo img{
-    width: 130px;
-  } */
-
-  main .content .left-side{
+  main aside{
     width: 150px;
   }
 
-  main .content .right-side{
+  main .content{
     width: calc(100vw - 150px);
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .offcanvas{
+    width: 100% !important;
   }
 }
