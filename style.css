@@ -107,7 +107,7 @@ main .content{
 }
 
 .content .boolean-top{
-  height: 120px;
+  /* height: 120px; */
   background-color: #1b72e8;
 }
 
@@ -147,5 +147,11 @@ table tbody tr td .btn{
 @media screen and (max-width: 1200px){
   .offcanvas{
     width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .content .boolean-top{
+    height: 120px;
   }
 }
